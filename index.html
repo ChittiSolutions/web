@@ -1,0 +1,26 @@
+<html>
+	<head>
+	
+	  <script Language = "javascript">
+
+		function DisplayClockTime()
+		{
+			d = new Date()
+			h = d.getHours()
+			m = d.getMinutes()
+			s = d.getSeconds()
+		
+	    		f.txtTime.value = h + ":" + m + ":" + s
+	    		// Assigning Time to Textbox
+	    		window.SetTimeOut("DisplayClockTime()",1000)
+		}
+	  </script>
+
+	</head>
+	<body Onload = "DisplayClockTime()">
+		<form name = "f">
+
+			Time : <input type  = "text" name = "txtTime">
+		</form>
+	</body>
+</html>
